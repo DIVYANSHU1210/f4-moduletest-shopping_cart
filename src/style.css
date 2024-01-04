@@ -1,0 +1,92 @@
+body{
+    margin:0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    display:flex;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    padding-block: 0px; 
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav .active{
+    color: antiquewhite;
+}
+
+
+.products, .cart-items{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+
+.product-card{
+    margin: 30px;
+    border: black solid 1px;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    background-color: rgb(248, 208, 248);
+}
+
+
+.product-desc{
+    padding: 10px;
+}
+
+
+
+.cart{
+    display: flex;
+}
+
+.cart-items{
+    flex: 4;
+}
+
+.cart-summary{
+    flex:1;
+    background-color: black;
+    color: white;
+    margin: 5px;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cart-summary>table{
+    width: 350px;
+}
+
+table tfoot {
+    background-color: #272424;
+    font-weight: bold;
+    border-top: 2px solid #333; /* Add a line above the footer */
+    border-bottom: 2px solid #333; /* Add a line below the footer */
+    color: aqua;
+}
+
+table td{
+    padding-block: 5px;
+}
+
+.clr-btn{
+    width: 300px;
+    padding: 10px;
+    font-size: 20px;
+}
